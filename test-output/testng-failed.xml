@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Practical]">
+  <listeners>
+    <listener class-name="com.qa.report.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="PracticalExam(failed)">
+    <classes>
+      <class name="com.qa.tests.EnvironmentalReportEditPageTest">
+        <methods>
+          <include name="editTest"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.qa.tests.EnvironmentalReportEditPageTest -->
+      <class name="com.qa.tests.EnvironmentalReportDeletePageTest">
+        <methods>
+          <include name="deleteReportTest"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+          <include name="EnvironmentaReportSearchpageTest"/>
+        </methods>
+      </class> <!-- com.qa.tests.EnvironmentalReportDeletePageTest -->
+      <class name="com.qa.tests.EnvironmentalReportSearchPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="EnvironmentaReportSearchpageTest"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.qa.tests.EnvironmentalReportSearchPageTest -->
+      <class name="com.qa.tests.ModuleDetailPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+          <include name="comparePropertyLabelTest"/>
+        </methods>
+      </class> <!-- com.qa.tests.ModuleDetailPageTest -->
+    </classes>
+  </test> <!-- PracticalExam(failed) -->
+</suite> <!-- Failed suite [Practical] -->

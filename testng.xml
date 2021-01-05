@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Practical">
+
+<listeners>
+		<listener class-name="com.qa.report.TestListener" />
+	</listeners>
+	
+  <test thread-count="1" name="PracticalExam" preserve-order="true">
+    <classes>
+      <class name="com.qa.tests.LoginPageTest"/>
+      <class name="com.qa.tests.PropertyListPageTest"/>
+      <class name="com.qa.tests.ModuleDetailPageTest"/>
+      <class name="com.qa.tests.EnvironmentalReportAddTest"/>
+      <class name="com.qa.tests.EnvironmentalReportSearchPageTest"/>
+      <class name="com.qa.tests.EnvironmentalReportEditPageTest"/>
+      <class name="com.qa.tests.EnvironmentalReportDeletePageTest"/>
+      
+    </classes>
+  </test> <!-- PracticalExam -->
+</suite> <!-- Practical -->
